@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PD6_Module06.AccelerometerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" x:Name="LabelX" FontSize="Large"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="LabelY" FontSize="Large"/>
+                <Label Grid.Row="2" Grid.ColumnSpan="2" x:Name="LabelZ" FontSize="Large"/>
+
+                <Button Grid.Row="3" Grid.Column="0" Text="Start" x:Name="ButtonStart"
+                        Clicked="ButtonStart_Clicked"/>
+
+                <Button Grid.Row="3" Grid.Column="1" Text="Stop" x:Name="ButtonStop"
+                        Clicked="ButtonStop_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
